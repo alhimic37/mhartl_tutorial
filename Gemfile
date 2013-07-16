@@ -41,6 +41,10 @@ group :development, :test do
    gem 'cucumber', '1.3.2'
    gem "database_cleaner" 
    gem "factory_girl_rails" 
+  
+  gem "guard-rspec", "~> 3.0.2"
+  gem 'spork-rails', github: 'sporkrb/spork-rails'
+  gem 'guard-spork', '1.5.0'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
