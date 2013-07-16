@@ -35,6 +35,12 @@ group :development, :test do
   gem 'rspec-rails'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  
+ gem "cucumber-rails", :require => false, :git =>
+     'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
+   gem 'cucumber', '1.3.2'
+   gem "database_cleaner" 
+   gem "factory_girl_rails" 
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
