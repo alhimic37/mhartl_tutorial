@@ -45,7 +45,15 @@ group :development, :test do
   gem "guard-rspec", "~> 3.0.2"
   gem 'spork-rails', github: 'sporkrb/spork-rails'
   gem 'guard-spork', '1.5.0'
+  
 end
+
+group :development do
+gem 'annotate'
+end
+
+gem 'protected_attributes'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
