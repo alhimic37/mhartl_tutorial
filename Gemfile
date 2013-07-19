@@ -37,7 +37,7 @@ group :development, :test do
   gem 'sqlite3'
   
  gem "cucumber-rails", :require => false, :git =>
-     'https://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
+     'git://github.com/cucumber/cucumber-rails.git', :branch => 'master_rails4_test'
    gem 'cucumber', '1.3.2'
    gem "database_cleaner" 
    gem "factory_girl_rails" 
@@ -55,13 +55,13 @@ end
 gem 'protected_attributes'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby'
 
 # Use unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
