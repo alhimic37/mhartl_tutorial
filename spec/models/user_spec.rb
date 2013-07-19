@@ -81,6 +81,7 @@ it { should respond_to(:password_digest) }
     before { @user.email = " " }
     it { should_not be_valid }
   end
+ end
 describe "return value of authenticate method" do
   before { @user.save }
   let(:found_user) { User.find_by_email(@user.email) }
@@ -101,4 +102,4 @@ end
   it { should be_invalid }
 end
 end
-end
+
